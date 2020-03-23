@@ -1,46 +1,19 @@
 <!--pages/quiz/quiz.wxml-->
-<scroll-view class="quizitems" scroll-y="{{true}}">
-  <view class="title"> 
-    <text> 单选题 </text>
-  </view>
-  <view class="radio-group" wx:for-items="{{singlequizlist}}">
-    <view class='stem'>
-      <text>{{item.stem}}</text>
-  </view>
-  <radio-group  bindchange="radioChange">
-    <label class="singleoptions" wx:for-items="{{item.options}}" wx:for-item="options" wx:key="*item"> 
-        {{options}}<radio value="{{options}}"/> 
-    </label>
-  </radio-group>
-  </view>
-  <view class="title"> 
-    <text> 多选题 </text>
-  </view>
-  <view class="checkbox-group" wx:for-items="{{multiplequizlist}}">
-    <view class='stem'>
-      <text>{{item.stem}}</text>
-    </view>
-    <checkbox-group  bindchange="checkboxChange">
-      <label class="multipleoptions" wx:for-items="{{item.options}}" wx:for-item="options" wx:key="*item"> 
-          {{options}}<checkbox value="{{options}}"/> 
-      </label>
-    </checkbox-group>
-  </view>
-  <view class="title"> 
-    <text> 简答题 </text>
-  </view>
-  <view class="textarea-group" wx:for-items="{{questionquizlist}}">
-    <view class='stem'>
-      <text>{{item.stem}}</text>
-    </view>
-    <view class="question-content" >
-      <textarea placeholder="请输入答案" bindblur="bindTextAreaContent"></textarea>
-    </view>
-  </view>
-</scroll-view>
-<view class="controls">
-  <button class="btn">
-    挑战更高难度
-  </button>
+<view wx:if="{{role=='teacher'}}">
+  <include src="quizitems.wxml" />
 </view>
+<view wx:else>
+  <scroll-view class="quizitems" scroll-y="{{true}}">
+    <include src="quizitems.wxml" />
+  </scroll-view>
+  <view class="controls">
+    <button class="btn">
+      提交
+    </button>
+    <button class="btn">
+      挑战更高难度
+    </button>
+  </view>
+</view>
+
 

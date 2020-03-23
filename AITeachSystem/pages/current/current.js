@@ -413,7 +413,9 @@ Page({
   },
 
   onStatistics: function(e) {
-    console.log("查看统计数据");
+    wx.navigateTo({
+      url: '../../pages/statistics/statistics'
+    });   
   },
 
   onFinishTeach: function (e) {

@@ -4,6 +4,14 @@
   height:1080rpx;
 }
 
+.controls{
+  margin-top: 10rpx;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .stem{
   height: 48rpx;
   line-height: 48rpx;

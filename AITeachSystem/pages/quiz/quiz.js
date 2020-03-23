@@ -1,10 +1,13 @@
 // pages/quiz/quiz.js
+const app=getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    role:'',
     unit_name: '',
     singlequizlist:[],
     multiplequizlist:[],
@@ -55,6 +58,7 @@ Page({
     }];
 
     this.setData({
+      role:app.globalData.role,
       unit_name,
       singlequizlist,
       multiplequizlist,
