@@ -1,0 +1,4 @@
+<!--components/inputbar.wxml-->
+<view class='value-input-group'>
+  <input class='value-input' placeholder="{{inputtips}}" bindinput='inputListener' bindconfirm='inputConfirm'></input>
+</view>

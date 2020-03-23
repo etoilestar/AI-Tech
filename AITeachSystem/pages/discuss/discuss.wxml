@@ -1,0 +1,5 @@
+<!--pages/discuss/discuss.wxml-->
+<view wx:if="{{role=='teacher'}}"> <include src="discuss_t.wxml" /> </view>
+<view wx:else> <include src="discuss_s.wxml" /> </view>
+
+

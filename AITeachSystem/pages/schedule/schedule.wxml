@@ -1,0 +1,5 @@
+<!--pages/schedule/schedule.wxml-->
+<view wx:if="{{role=='teacher'}}"> <include src="schedule_t.wxml" /> </view>
+<view wx:else> <include src="schedule_s.wxml" /> </view>
+
+

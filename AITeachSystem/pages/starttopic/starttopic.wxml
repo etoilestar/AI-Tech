@@ -1,0 +1,22 @@
+<!--pages/starttopic/starttopic.wxml-->
+<view class="topic-item"> 
+<view class="topic-top-group">
+  <view class="topic-type-icon">
+    <image wx:if="{{topictype=='teacher'}}" src="../../images/teacher.png"></image>
+    <image wx:if="{{topictype=='discuss'}}" src="../../images/discuss-fill.png"></image>   
+    <image wx:if="{{topictype=='question'}}" src="../../images/question.png"></image>    
+  </view>
+  <view class="topic-author">
+    {{author}} 
+  </view>
+  <view class="topic-createtime">
+    {{createtime}} 
+  </view>
+</view>
+<textarea class="topic-content" placeholder="请输入内容" bindblur="bindTextAreaContent">
+</textarea>
+</view>
+<view class="controll">
+  <button class="btn">提交</button>
+</view>
+

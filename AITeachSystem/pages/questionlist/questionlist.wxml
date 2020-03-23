@@ -1,0 +1,4 @@
+<!--pages/questionlist/questionlist.wxml-->
+<topicitem typeoftopic='question' hotdegree='0.0' author='张三' createtime='2020-02-03 18:00' content='测试题第2题怎么做？'></topicitem>
+<topicitem typeoftopic='question' hotdegree='0.0' author='李四' createtime='2020-02-03 19:00' content='作业的第2题怎么做？'></topicitem>
+<topicitem typeoftopic='question' hotdegree='0.0' author='王五' createtime='2020-02-03 19:10' content='测试的单选第2题为什么选C？'></topicitem>

@@ -1,0 +1,57 @@
+/* components/topicitem/topicitem.wxss */
+.topic-item{
+  margin-top: 10rpx;
+  border-radius: 20rpx;
+  border-style:solid;
+  border-width:2rpx;
+  border-color: gainsboro;
+  overflow: hidden;
+}
+
+.topic-top-group{
+  width:100%;
+  height: 72rpx;
+  display: flex;
+  justify-content: space-between;
+  background-color: ghostwhite;
+}
+
+.topic-type-icon image{
+  margin-top: 8rpx;
+  margin-left: 8rpx;
+  width: 54rpx;
+  height:54rpx;
+}
+
+.topic-author{
+  width: 120rpx;
+  height: 72rpx;
+  line-height: 72rpx;  
+  text-align: center; 
+}
+
+.topic-createtime{
+  width: 280rpx;
+  height: 72rpx;
+  line-height: 72rpx;  
+  text-align: center; 
+}
+
+.topic-hot-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topic-hot-group image{
+  width:  48rpx;
+  height: 48rpx;
+}
+
+.topic-content
+{
+  width:100%;
+  height: 120rpx;
+  background-color:lightskyblue;
+}
+

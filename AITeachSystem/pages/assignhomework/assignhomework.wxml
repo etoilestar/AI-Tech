@@ -1,0 +1,12 @@
+<!--pages/assignhomework/assignhomework.wxml-->
+<view class='title'> 
+  <text>作业内容</text>
+</view>
+<textarea class="stem" placeholder="请输入题目" bindblur="bindTextAreaStem">
+</textarea>
+<textarea class="stemcontent" placeholder="请输入具体内容" bindblur="bindTextAreaContent">
+</textarea>
+<view class='buttons'>
+  <button class='btn'> 上传附件</button>
+  <button class='btn'> 发布作业</button>
+</view>

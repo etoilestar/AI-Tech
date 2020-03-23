@@ -1,0 +1,53 @@
+<!--pages/current/current_t.wxml-->
+<scroll-view class="radio-view-t" scroll-y="{{true}}">
+<radio-group class="radio-group" bindchange="radioChange">
+  <view class='title-box'>
+    <text>已完成</text>
+  </view>
+  <view wx:for-items="{{unitlist}}" wx:key="id">
+    <label wx:if="{{item.status=='finished'}}"> 
+       {{item.name}}
+       <text wx:if="{{item.learntype=='teach'}}"> 课堂教学 </text>
+       <text wx:else> 自主学习 </text>
+       <radio value="{{item.name}}" />
+    </label>
+  </view>
+  <view class='title-box'>
+    <text>进行中</text>
+  </view>
+  <view wx:for-items="{{unitlist}}" wx:key="id">
+    <label wx:if="{{item.status=='ongoing'}}">
+       {{item.name}}
+        <text wx:if="{{item.learntype=='teach'}}"> 课堂教学 </text>
+       <text wx:else> 自主学习 </text>
+       <radio value="{{item.name}}" />
+    </label>
+  </view>
+  <view class='title-box'>
+    <text>待开始</text>
+  </view>
+  <view wx:for-items="{{unitlist}}" wx:key="id">
+    <label wx:if="{{item.status=='prepare'}}">
+      {{item.name}}
+      <text wx:if="{{item.learntype=='teach'}}"> 课堂教学 </text>
+      <text wx:else> 自主学习 </text>
+      <radio value="{{item.name}}" />
+    </label>
+  </view>
+</radio-group>
+</scroll-view>
+<view class='buttons-view'>
+  <button class="btn" bind:tap = 'onLessonUnit'>查看内容 </button>
+  <button class="btn" bind:tap = 'onStartTeach'>开始教学 </button>
+  <button class="btn" bind:tap = 'onSignin'>课堂签到 </button>
+  <button class="btn" bind:tap = 'onTopic'>发起话题 </button>
+</view>
+<view class='buttons-view'>
+  <button class="btn" bind:tap = 'onAnswerQuestion'>回答疑问 </button>
+  <button class="btn" bind:tap = 'onAssignHomework'>布置作业 </button>
+  <button class="btn" bind:tap = 'onStatistics'>统计数据 </button>
+  <button class="btn" bind:tap = 'onFinishTeach'>完成教学 </button>
+</view>
+
+
+

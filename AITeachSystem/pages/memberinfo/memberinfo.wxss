@@ -1,0 +1,118 @@
+/* pages/memberinfo/memberinfo.wxss */
+.checkbox-view {
+  width:100%;
+  height:960rpx;
+}
+
+/* 文字样式设为居中 */
+.title-box {
+  justify-content:center;
+}
+
+.checkboxList label {
+    display: flex;
+    justify-content: space-between;
+    height: 86rpx;
+    line-height: 86rpx;
+    font-size: 32rpx;
+    background-color:whitesmoke;
+    border-bottom: 1rpx solid gainsboro;
+    box-sizing: border-box;
+    padding: 0 20rpx;
+}
+
+.nameitem
+{
+  width: 120rpx;
+  /* background-color: yellow; */
+  text-align: left;
+}
+
+.binded
+{
+  width: 200rpx;
+  /* background-color: burlywood; */
+  text-align: left;
+  color:#1296db;
+  font-weight: bold;
+}
+
+.unbinded
+{
+  width: 200rpx;
+  /* background-color: burlywood; */
+  text-align: left;
+  color: gainsboro;
+  font-weight: bold;
+}
+
+label.checkbox {
+  padding-left: 130rpx;
+}
+
+checkbox .wx-checkbox-input{
+    width:  38rpx;
+    height: 38rpx;
+}
+  
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+    border: 1rpx solid transparent;
+    background-color: #1296db;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+  width: 38rpx;
+  height: 38rpx;
+  line-height: 38rpx;
+  text-align: center;
+  font-size:38rpx;
+  color:#fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+.manage-group{
+  display: flex;
+  justify-content: space-around;
+  margin-top:42rpx;
+}
+
+.inputbox{
+  height:86rpx;
+  display: flex;
+  align-items: center;
+  background-color: ghostwhite;
+  border-radius: 20rpx;
+}
+
+.unitview{
+  padding: 20rpx 30rpx;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  background-color: #fff;
+  border-top: 1rpx solid #d8d8d8;
+}
+
+.clickitem-group{
+  display: flex;
+  justify-content: space-between;
+}
+
+.clickitem{
+  margin:0rpx 30rpx;
+  color:#1bcf74;
+  font-weight: bold;
+}
+
+.unitviewdisable{
+  padding: 20rpx 30rpx;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  background-color:ghostwhite;
+  border-top: 1rpx solid #d8d8d8;
+}

@@ -1,0 +1,25 @@
+<!--pages/homeworks/homeworks.wxml-->
+<block  wx:for-items="{{homeworklist}}" wx:key='id'>
+<view class="homework-item"> 
+  <view class="homework-top-group">
+    <view>
+      发布时间
+    </view>
+    <view>
+      {{item.createtime}} 
+    </view>
+    <view wx:if="{{item.attached!=''}}" class="canclick">
+      附件
+    </view>
+    <view wx:else class="noattached">
+      附件
+    </view>
+    <view class="canclick">
+      详情
+    </view>
+  </view>
+  <view class="homework-title">
+    {{item.title}} 
+  </view>
+</view>
+</block>

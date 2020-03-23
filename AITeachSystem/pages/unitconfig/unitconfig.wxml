@@ -1,0 +1,23 @@
+<!--pages/unitconfig/unitconfig.wxml-->
+<view class="title"> 
+  <text> 学习方式 </text>
+</view>
+<view class='learn-type'>
+  <text> 自主学习 </text>
+  <switch style='zoom:.8;' wx:if="{{learntype=='self'}}" checked bindchange="switchChange"/>
+  <switch style='zoom:.8;' wx:else  bindchange="switchChange"/>
+</view>
+<view class="title"> 
+  <text> 抽题比例 </text>
+</view>
+<view class="sliders">
+  <text> 简单 </text>
+  <slider max="100" step="10" value="{{simplepercent}}" show-value="true" block-size='32' bindchange="listenSliderSimple" block-color='#1296db' backgroundColor='slightgray' activeColor='#1bcf74'/>
+  <text> 中等 </text>
+  <slider max="100" step="10" value="{{mediumpercent}}" show-value="true" block-size='32' bindchange="listenSliderMedium" block-color='#1296db' backgroundColor='slightgray' activeColor='#1bcf74'/>
+   <text> 困难 </text>
+  <slider max="100" step="10" value="{{hardpercent}}" show-value="true" block-size='32' bindchange="listenSliderHard" block-color='#1296db' backgroundColor='slightgray' activeColor='#1bcf74'/> 
+</view>
+
+
+

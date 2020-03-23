@@ -1,0 +1,20 @@
+<!--pages/schedule/schedule_t.wxml-->
+<block wx:for-items="{{chapterlist}}" wx:key="{{item.id}}">
+  <view class="kind-list-item">
+    <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
+      <view class="kind-list-text">{{item.name}}</view>
+    </view>
+    <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
+      <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
+        <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item">
+          <!-- <navigator url="pages/{{page}}/{{page}}" class="navigator"> -->
+          <navigator url="../../pages/lessonunit/lessonunit?unit_name={{page}}" class="navigator">   
+            <view class="navigator-text">{{page}}</view>
+            <!-- icon -->
+            <view class="navigator-arrow"></view>
+          </navigator>
+        </block>
+      </view>
+    </view>
+  </view>
+</block>

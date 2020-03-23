@@ -1,0 +1,61 @@
+{
+  "usingComponents": {
+    "inputbar": "/components/inputbar/inputbar"
+  },
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/current/current",
+    "pages/schedule/schedule",
+    "pages/discuss/discuss",
+    "pages/memberinfo/memberinfo",
+    "pages/lessonunit/lessonunit",
+    "pages/topic/topic",
+    "pages/questionlist/questionlist",
+    "pages/unitconfig/unitconfig",
+    "pages/quiz/quiz",
+    "pages/assignhomework/assignhomework",
+    "pages/homeworks/homeworks",
+    "pages/quizscore/quizscore",
+    "pages/starttopic/starttopic"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "AITeachSys 1.0Beta",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/current_selected.png",
+        "iconPath": "images/current.png",
+        "pagePath": "pages/current/current",
+        "text": "current"
+      },
+      {
+        "selectedIconPath": "images/schedule_selected.png",
+        "iconPath": "images/schedule.png",
+        "pagePath": "pages/schedule/schedule",
+        "text": "schedule"
+      },
+      {
+        "selectedIconPath": "images/discuss_selected.png",
+        "iconPath": "images/discuss.png",
+        "pagePath": "pages/discuss/discuss",
+        "text": "discuss"
+      },
+      {
+        "selectedIconPath": "images/memberinfo_selected.png",
+        "iconPath": "images/memberinfo.png",
+        "pagePath": "pages/memberinfo/memberinfo",
+        "text": "memberinfo"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

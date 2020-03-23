@@ -1,0 +1,29 @@
+<!--pages/lessonunit/lessonunit.wxml-->
+<view>
+<view class="pre-tags">
+  <view class='pre-tags-title' >前提</view>
+  <block wx:for-items="{{prerequisite}}" wx:key='*this'><view class='pre-tags-item'>{{item}}</view> </block>
+</view>
+<view class="unit-name">
+  <text> {{unit_name}} </text>
+  <navigator wx:if="{{role=='teacher'}}" url='../../pages/unitconfig/unitconfig?unit_name={{unit_name}}'> 设置 </navigator>
+</view>
+<view class="unitabstract">
+  <text> {{abstract}} </text> 
+</view>
+
+<view class="video-and-quiz">
+  <text> 视频列表 </text>
+  <navigator url='../../pages/quiz/quiz?unit_name={{unit_name}}'> 测试题目 </navigator>
+</view>
+
+<!-- 本地视频无法正常加载 -->
+<!-- <video src="../../video/big_buck_bunny.mp4"></video> -->
+<view class="video-list" wx:for-items="{{videolist}}" wx:key='id'>
+  <video style="width: 100%;height=400px;margin:1px;" src="{{item.link}}" binderror="videoErrorCallback"></video>
+  <cover-view class='video-title'> {{item.title}} </cover-view>
+</view>
+</view>
+
+
+

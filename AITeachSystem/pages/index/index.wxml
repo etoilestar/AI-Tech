@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="content">
+  <!--背景图-->
+	<image class='background' src="../../images/cover.png" mode="aspectFill"></image>
+
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>  
+  <view class='name-input'>
+    <inputbar  inputtips='请输入姓名' bind:inputListener='inputname'></inputbar>
+  </view>
+  <view class='class-input'>
+    <inputbar  inputtips='请输入班级' bind:inputListener='inputclass'></inputbar>
+  </view>
+  <view class="usertips">
+    <text class="user-tips">首次登录需验证姓名与班级\n</text>
+  </view>
+  <view>
+      <text class="user-tips">教师不需要输入班级</text>
+  </view>
+</view>

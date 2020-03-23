@@ -1,0 +1,25 @@
+<!--components/topicitem/topicitem.wxml-->
+<navigator class="topic-item" url="../../pages/topic/topic?topicid={{topicid}}"> 
+<view class="topic-top-group">
+  <view class="topic-type-icon">
+    <image wx:if="{{typeoftopic=='teacher'}}" src="../../images/teacher.png"></image>
+    <image wx:if="{{typeoftopic=='discuss'}}" src="../../images/discuss-fill.png"></image>   
+    <image wx:if="{{typeoftopic=='question'}}" src="../../images/question.png"></image>    
+  </view>
+  <view class="topic-author">
+    {{author}} 
+  </view>
+  <view class="topic-createtime">
+    {{createtime}} 
+  </view>
+  <view class="topic-hot-group">
+    <image wx:for="{{lights}}"  wx:key="*this" src="../../images/handfull.png"></image>
+    <image wx:for="{{halfs}}"   wx:key="*this" src="../../images/handhalf.png"></image>
+    <image wx:for="{{emptys}}"  wx:key="*this" src="../../images/hand.png"></image>   
+    <!-- {{hotdegree}} -->
+  </view>
+</view>
+<view class="topic-content">
+  {{content}} 
+</view>
+</navigator>

@@ -1,0 +1,23 @@
+/* pages/unitconfig/unitconfig.wxss */
+
+.learn-type{
+  display: flex;
+  justify-content: space-between;
+  margin:20rpx;
+}
+
+.learn-type text{
+  font-size:   40rpx;
+  line-height: 40rpx;
+}
+
+.sliders{
+  margin-top: 20rpx;
+}
+
+.sliders text{
+  margin-left: 20rpx;
+  margin-top:  20rpx;
+  font-size:   40rpx;
+  line-height: 40rpx;  
+}

@@ -1,0 +1,13 @@
+<!--pages/memberinfo/memberinfo_s.wxml-->
+<block wx:for-items="{{scorelist}}" wx:key="name">
+  <view wx:if="{{item.Enable}}" class="unitview"> 
+    {{item.name}}
+    <view class="clickitem-group">
+    <navigator class="clickitem" url="../../pages/quizscore/quizscore?unit_name={{item.name}}"> 测试</navigator>
+    <navigator class="clickitem" url="../../pages/homeworks/homeworks?unit_name={{item.name}}"> 作业</navigator>
+    </view>
+  </view>
+  <view wx:else class="unitviewdisable">
+    {{item.name}}
+  </view>
+</block>

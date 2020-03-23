@@ -1,0 +1,29 @@
+<!--pages/memberinfo/memberinfo_t.wxml-->
+<scroll-view class="checkbox-view" scroll-y="{{true}}">
+<view class="title-box">
+  <text>高三(2)班</text>
+</view>
+<checkbox-group class='checkboxList' bindchange="checkboxChange">
+	<label class="checkbox" wx:for="{{studentlist}}" wx:key="id">
+		<view class="nameitem">
+      {{item.name}}
+    </view>
+    <view class="binded" wx:if="{{item.status=='binded'}}">
+      <text>已绑定</text>
+    </view>
+    <view class="unbinded" wx:else>
+      <text>未绑定</text>
+    </view>
+    <checkbox value="{{item.id}}" checked="{{item.checked}}"/>
+	</label>
+</checkbox-group>
+</scroll-view>
+<view class="manage-group">
+  <view class="inputbox" >
+    <inputbar inputtips='请输入学生姓名' bind:inputListener='inputstudent'></inputbar>
+  </view>
+  <!-- <view class="buttons" bind:tap='onAddClicked'> 添加</view>
+  <view class="buttons" bind:tap='onDelClicked'> 删除</view> -->
+  <button class="btn" bind:tap='onAddClicked'> 添加 </button>
+  <button class="btn" bind:tap='onDelClicked'> 删除 </button> 
+</view>

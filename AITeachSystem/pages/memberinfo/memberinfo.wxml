@@ -1,0 +1,3 @@
+<!--pages/memberinfo/memberinfo.wxml-->
+<view wx:if="{{role=='teacher'}}"><include src="memberinfo_t.wxml" /></view>
+<view wx:else><include src="memberinfo_s.wxml"/></view>

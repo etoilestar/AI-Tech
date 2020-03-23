@@ -1,0 +1,2 @@
+<!--pages/quizscore/quizscore.wxml-->
+<text>{{unit_name}}的测试成绩</text>

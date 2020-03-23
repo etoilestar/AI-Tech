@@ -1,0 +1,5 @@
+<!--pages/discuss/discuss_s.wxml-->
+<topicitem typeoftopic='question' hotdegree='0.0' author='王五' createtime='2020-02-03 19:10' content='测试的单选第2题为什么选C？'></topicitem>
+<topicitem typeoftopic='teacher' hotdegree='1.0' author='韩梅梅' createtime='2020-01-01 14:30' content='生活中的人工智能产品有哪些？'></topicitem>
+<topicitem typeoftopic='discuss' hotdegree='0.6' author='张小龙' createtime='2020-01-02 09:30' content='微信小程序优缺点？'></topicitem>
+<topicitem typeoftopic='question' hotdegree='0.2' author='无名' createtime='2020-02-02 00:00' content='如何学好python？'></topicitem>

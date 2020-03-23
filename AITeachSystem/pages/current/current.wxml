@@ -1,0 +1,6 @@
+<!--pages/current/current.wxml-->
+<view wx:if="{{role=='teacher'}}"> <include src="current_t.wxml" /> </view>
+<view wx:else> <include src="current_s.wxml" /> </view>
+
+
+

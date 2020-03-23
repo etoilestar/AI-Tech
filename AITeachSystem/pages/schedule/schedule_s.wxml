@@ -1,0 +1,8 @@
+<!--pages/schedule/schedule_s.wxml-->
+<block wx:for-items="{{scorelist}}" wx:key="{{item.name}}">
+  <navigator wx:if="{{item.Enable}}" url="../../pages/lessonunit/lessonunit?unit_name={{item.name}}" class="navigator">   
+    <view class="navigator-text">{{item.name}}</view> 
+    <view class="navigator-arrow"></view>
+  </navigator>
+  <view wx:else class="text"> {{item.name}} </view>
+</block>
